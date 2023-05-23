@@ -1,4 +1,4 @@
-# Задание 1. Не знаю, куда вставить цикл while. В класс или при вызове методов. Ничего не получается, грусть и печаль
+# Задание 1. Не знала, куда вставить цикл while. Спасибо за помощь, теперь всё получилось!
 
 # Пользователь вводит с клавиатуры набор чисел. Полученные числа необходимо сохранить в список (тип
 # списка нужно выбрать в зависимости от поставленной
@@ -182,7 +182,91 @@
 # При старте приложения нужно отобразить меню с
 # помощью, которого пользователь может выбрать необходимую операцию.
 
+# class Stack:
+#     def __init__(self, lst, size):
+#         self.lst = lst
+#         self.size = size
 #
+#     def push(self, value):
+#         if self.is_full():
+#             print('Stack is full!')
+#         else:
+#             if not isinstance(value, str):
+#                 try:
+#                     value = str(value)
+#                 except ValueError:
+#                     print(f'Argument {value} is wrong data type')
+#                 else:
+#                     print('Warning! Your data type was reduced to str!'
+#                           f'And tour value will be replaced with {value}')
+#                     self.lst.append(value)
+#             else:
+#                 self.lst.append(value)
+#                 print(f'Value \'{value}\' added!')
+#
+#     def length(self):
+#         return len(self.lst)
+#
+#     def is_empty(self):
+#         if self.length() == 0:
+#             return 'Stack is empty!'
+#         return False
+#
+#     def is_full(self):
+#         if self.length() == self.size:
+#             return 'Stack is full!'
+#         return False
+#
+#     def pop(self):
+#         return self.is_empty() or self.lst.pop()
+#
+#     def peek(self, value):
+#         return self.is_empty() or self.lst[int(value)]
+#
+#     def clear(self):
+#         self.lst.clear()
+#         return 'Stack is cleared!'
+#
+#     def show(self):
+#         return f' -> '.join(map(str, self.lst))
+#
+#     def commands(self):
+#         while True:
+#             command = input('Введите номер команды:\n'
+#                             '1. Добавить новую строку в стек\n'
+#                             '2. Вытолкнуть строку из стека\n'
+#                             '3. Посчитать количество строк в стеке\n'
+#                             '4. Проверить, пустой ли стек\n'
+#                             '5. Проверить, полный ли стек\n'
+#                             '6. Очистить стек\n'
+#                             '7. Показать содержимое стека\n'
+#                             '8. Получить значение без выталкивания верхней строки из стека\n'
+#                             '0. Выйти.\n')
+#             if command == '0':
+#                 break
+#             elif command == '1':
+#                 value = input('Введите строку для добавления: ')
+#                 print(self.push(value))
+#             elif command == '2':
+#                 print(f'Значение {self.pop()} удалено')
+#             elif command == '3':
+#                 print(self.length())
+#             elif command == '4':
+#                 print(self.is_empty())
+#             elif command == '5':
+#                 print(self.is_full())
+#             elif command == '6':
+#                 print(self.clear())
+#             elif command == '7':
+#                 print(self.show())
+#             elif command == '8':
+#                 value = input('Введите индекс значения: ')
+#                 print(self.peek(value))
+#
+#
+# start_nums = [input('Введите строку: ') for i in range(3)]
+# stack = Stack(start_nums, 5)
+# stack.commands()
 
 
 # Задание 3
